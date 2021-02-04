@@ -1,4 +1,7 @@
-import datetime
-now = datetime.datetime.now()
+from datetime import datetime
+import time
 
-print(now.strftime('%H:%M:%S on %A, %B the %dth, %Y')) > index.html
+while True:
+    now = datetime.now()
+    print(now.strftime("%H:%M:%S on %A, %B the %dth, %Y"))
+    time.sleep(3600)
