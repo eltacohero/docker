@@ -7,5 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./date.py" ]
+CMD [ "python", "./date.py > index.html" ]
  
