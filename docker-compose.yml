@@ -4,12 +4,11 @@ services:
     ports:
       - "8080:8080"     
     volumes:
-    - 'dockvol:/shared'
+      - 'dockvol:/shared'
   python:
     build: ./python
     command: >
-      /bin/bash cp /home/eltacohero/docker/python/date.py python/
-      /bin/bash python3 date.py
+      /bin/bash cp /home/eltacohero/docker/python/date.py python/ && python3 date.py > /shared/index.html
     volumes:
       - 'dockvol:/shared'
 volumes:
