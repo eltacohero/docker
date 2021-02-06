@@ -7,6 +7,9 @@ services:
     - 'dockvol:/shared'
   python:
     build: ./python
+    command: >
+      /bin/bash cp /home/eltacohero/docker/python/date.py python/
+      /bin/bash python3 date.py
     volumes:
       - 'dockvol:/shared'
 volumes:
