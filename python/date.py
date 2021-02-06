@@ -6,4 +6,4 @@ while True:
     with open(fname, 'w') as f:
         now = datetime.now()
         f.write(now.strftime("%H:%M:%S on %A, %B the %dth, %Y"))
-        time.sleep(3600)
+    time.sleep(3600)

@@ -1,0 +1,14 @@
+services:
+  http:
+    build: ./python
+    volumes:
+      - 'dockvol:/shared'
+  python:
+    build: ./http
+    ports:
+      - "8080:8080"
+    volumes:
+      - 'dockvol:/shared'
+volumes:
+  dockvol:
+    driver: local     
